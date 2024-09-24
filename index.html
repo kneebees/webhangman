@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h2>Hangman</h2>
+    <table>
+      <tr>
+        <td></td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td>_</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>|</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>|</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>|</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id = "head"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>|</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id = 'leftarm'></td>
+        <td id = 'body'></td>
+        <td id = 'rightarm'></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>|</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id = 'body'></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>|</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id = 'leftleg'></td>
+        <td></td>
+        <td id = 'rightleg'></td>
+      </tr>
+      <tr>
+        <td>_</td>
+        <td>_</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <br>
+    <input type = "text" placeholder = 'guess' id = 'guess'></input>
+    <br>
+    <input type = "button" value = "submit" id = "submit"></input>
+    <h5 id = 'word'><h5>
+    <h5 id = 'guessed'></h5>
+    <h5 id = 'winlose'></h5>
+    <script src="script.js"></script>
+  </body>
+</html>
